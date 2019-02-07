@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="sample.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+.w3-third img{margin-bottom: -6px; opacity: 0.8; cursor: pointer}
+.w3-third img:hover{opacity: 1}
+</style>
+<body class="w3-light-grey w3-content" style="max-width:1600px">
+
+<!-- Sidebar/menu -->
+<a href="#top"></a>
+<nav class="w3-sidebar w3-bar-block w3-white w3-animate-left w3-text-grey w3-collapse w3-top w3-center" style="z-index:3;width:300px;font-weight:bold" id="mySidebar"><br>
+  <h3 class="w3-padding-64 w3-center"><b>Anna<br>Nevgad</b></h3>
+ 
+  <a href="#" onclick="w3_close()" class="w3-bar-item w3-button">Портфолио</a> 
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">Обо мне</a> 
+  <a href="sample.html" onclick="w3_close()" class="w3-bar-item w3-button" target="_blank">Галерея</a> 
+  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">Контакты</a>
+  
+   <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-hide-large">Закрыть</a>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-white w3-xlarge w3-padding-16">
+  <span class="w3-left w3-padding">Анна Невгад</span>
+  <a href="javascript:void(0)" class="w3-right w3-button w3-white" onclick="w3_open()">☰</a>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px">
+
+  <!-- Push down content on small screens --> 
+  <div class="w3-hide-large" style="margin-top:83px"></div>
+  
+  <!-- Photo grid -->
+ <article class="slide">
+  <a href="childfoto.html"><img src="w3images/foto_1_1.jpg"></a>
+  <div class="slide-content">
+    <div class="slide-item">														
+	<h3>Детская фотография</h3>
+        <p>Дети - цветы жизни...</p>
+    </div>
+  </div>
+</article>
+<article class="slide">
+  <a href="childfoto.html"><img src="w3images/foto_3_.jpg"></a>
+  <div class="slide-content">
+    <div class="slide-item">														
+	<h3>Портретная съемка</h3>
+        <p>Дети - цветы жизни...</p>
+    </div>
+  </div>
+</article>
+   
+   <article class="slide">
+  <a href="childfoto.html"><img src="w3images/foto_6_6.jpg"></a>
+  <div class="slide-content">
+    <div class="slide-item">														
+	<h3>Свадебное фото</h3>
+        <p>Дети - цветы жизни...</p>
+    </div>
+  </div>
+</article>
+<article class="slide">
+  <a href="childfoto.html"><img src="w3images/foto_1_1.jpg"></a>
+  <div class="slide-content">
+    <div class="slide-item">														
+	<h3>Семейное фото</h3>
+        <p>Дети - цветы жизни...</p>
+    </div>
+  </div>
+</article>
+<article class="slide">
+  <a href="childfoto.html"><img src="w3images/foto_4_4.jpg"></a>
+  <div class="slide-content">
+    <div class="slide-item">														
+	<h3>Природа</h3>
+        <p>Дети - цветы жизни...</p>
+    </div>
+  </div>
+</article>
+<article class="slide">
+  <a href="childfoto.html"><img src="w3images/foto_16_16.jpg"></a>
+  <div class="slide-content">
+    <div class="slide-item">														
+	<h3>Настроение</h3>
+        <p>Дети - цветы жизни...</p>
+    </div>
+  </div>
+</article>
+
+   
+
+  <!-- Contact section -->
+  <div class="w3-container w3-light-grey w3-padding-32 w3-padding-large" id="contact">
+    <div class="w3-content" style="max-width:600px">
+      <h4 class="w3-center"><b>Связаться со мной</b></h4>
+      <p>Желаешь сфотографироваться? Заполни ниже форму для уточнения деталей</p>
+      <form action="send.php" target="_blank">
+        <div class="w3-section">
+          <label>Имя</label>
+          <input class="w3-input w3-border" type="text" name="first_name" required>
+        </div>
+        <div class="w3-section">
+          <label>Email</label>
+          <input class="w3-input w3-border" type="text" name="email" required>
+        </div>
+        <div class="w3-section">
+          <label>Сообщение</label>
+          <input class="w3-input w3-border" type="text" name="Message" required>
+        </div>
+        <button type="submit" class="w3-button w3-block w3-black w3-margin-bottom">Отправить</button>
+      </form>
+    </div>
+  </div>
+
+
+  
+  <!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+  <a href="#top" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>Вверх</a>
+  <div class="w3-xlarge w3-section">
+    <a href="https://www.facebook.com/anna.ph.nevgad?fref=pb&hc_location=friends_tab" target="_blank"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+    <a href="https://www.instagram.com/fotografzp/" target="_blank"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+  <p>@copyright.SP 2019</p>
+</footer>
+<!-- End page content -->
+
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+</script>
+
+
+</body>
+</html>
